@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Renders Correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      class="search"
+      placeholder="Enter keywords..."
+      type="text"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
