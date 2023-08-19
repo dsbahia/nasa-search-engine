@@ -1,0 +1,23 @@
+.search-results-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-results-container h2 {
+  color: #cc011f;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.search-result-image {
+  width: calc(25% - 2%);
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
