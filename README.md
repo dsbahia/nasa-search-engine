@@ -23,8 +23,8 @@ This repository contains the implementation of a web application that connects t
 
 1. Clone the repository:
 
-`git clone https://github.com/dsbahia/tech-test.git`
-`cd tech-test`
+- `git clone https://github.com/dsbahia/tech-test.git`
+- `cd tech-test`
 
 ## Usage
 
@@ -36,16 +36,16 @@ This repository contains the implementation of a web application that connects t
 
 Given more time, here are a few enhancements I would consider adding to the app in order of priority:
 
-- Further CSS improvements, currently there are small bugs on a handful of searches where the images returned are cut in half.
+- Error Handling: Implement more robust error handling and user-friendly error messages for better user feedback. Currently it returns no error if no results are found.
+- Further CSS improvements, currently there are small bugs on a handful of searches where the images aren't scaling as expected.
 - Improved Responsiveness: Enhance the mobile experience to ensure a seamless and user-friendly interface on smaller screens. Currently it isn't optimised for mobile browsers.
 - A Jest Test is required for the getImages function which connects to the NASA API. This is required so the GET request behaves as expected and meets the specified requirements.
-- Error Handling: Implement more robust error handling and user-friendly error messages for better user feedback.
 - Search and Filtering: Add search and filtering options to allow users to discover specific space images based on their interests.
 - Image Detail View: Implement a detailed view for individual images, providing additional information and a larger view.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+Contributions are welcome! If you find any issues or have any other suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## License
 
