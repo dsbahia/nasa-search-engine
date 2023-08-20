@@ -53,4 +53,4 @@ This project is licensed under the [MIT License.](https://opensource.org/license
 
 ## Author
 
-- Created by Dal B
+Created by Dal B
