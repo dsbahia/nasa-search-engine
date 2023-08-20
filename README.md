@@ -4,8 +4,8 @@ Welcome to the NASA Image Search React web application! This project allows user
 
 ## NASA Space Images Viewer
 
-[Desktop Preview](https://github.com/dsbahia/tech-test/blob/main/screenshots/GoogleChrome_Desktop_Nasa_Screenshot.png)
-[Mobile Preview](https://github.com/dsbahia/tech-test/blob/main/screenshots/iPhone_Nasa_Search_Screenshot.jpeg)
+- [Desktop Preview](https://github.com/dsbahia/tech-test/blob/main/screenshots/GoogleChrome_Desktop_Nasa_Screenshot.png)
+- [Mobile Preview](https://github.com/dsbahia/tech-test/blob/main/screenshots/iPhone_Nasa_Search_Screenshot.jpeg)
 
 ## Description
 
