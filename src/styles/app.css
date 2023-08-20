@@ -1,13 +1,15 @@
 .app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .nasa-logo {
-    width: 250px;
-    height: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  overflow: auto;
+  padding: 20px;
+}
+
+.nasa-logo {
+  width: 250px;
+  height: auto;
+}
