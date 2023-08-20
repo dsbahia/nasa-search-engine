@@ -36,7 +36,7 @@ This repository contains the implementation of a web application that connects t
 
 Given more time, here are a few enhancements I would consider adding to the app in order of priority:
 
-- Further CSS improvements, currenty there are small bugs on a handful of searches where the images returned are cut in half.
+- Further CSS improvements, currently there are small bugs on a handful of searches where the images returned are cut in half.
 - Improved Responsiveness: Enhance the mobile experience to ensure a seamless and user-friendly interface on smaller screens. Currently it isn't optimised for mobile browsers.
 - A Jest Test is required for the getImages function which connects to the NASA API. This is required so the GET request behaves as expected and meets the specified requirements.
 - Error Handling: Implement more robust error handling and user-friendly error messages for better user feedback.
