@@ -11,14 +11,12 @@ describe("App", () => {
     render(<App />);
     const logoElement = screen.getByAltText("Nasa Logo");
     expect(logoElement).toBeInTheDocument();
-    expect(logoElement.src).toContain(
-      "https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
-    );
+    expect(logoElement).toHaveAttribute("src", "https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg");
   });
 
   it("Displays Search Component", () => {
     render(<App />);
-    const searchElement = screen.getByTestId("search-component");
+    const searchElement = screen.getByPlaceholderText("Enter keywords...");
     expect(searchElement).toBeInTheDocument();
   });
 });

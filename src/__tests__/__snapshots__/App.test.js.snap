@@ -10,9 +10,7 @@ exports[`App Renders Correctly 1`] = `
       class="nasa-logo"
       src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
     />
-    <div
-      data-testid="search-component"
-    >
+    <div>
       <form>
         <input
           class="search"
@@ -27,6 +25,13 @@ exports[`App Renders Correctly 1`] = `
           Go!
         </button>
       </form>
+    </div>
+    <div
+      class="search-results-container"
+    >
+      <div
+        class="image-grid"
+      />
     </div>
   </div>
 </DocumentFragment>

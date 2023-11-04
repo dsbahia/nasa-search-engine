@@ -13,7 +13,7 @@ function App() {
         alt="Nasa Logo"
       />
       <Search setSearchResults={setSearchResults} />
-      {searchResults.length > 0 && <SearchResults results={searchResults} />}
+      {searchResults && <SearchResults results={searchResults} />}
     </div>
   );
 }

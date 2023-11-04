@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import Search from "../components/Search";
+import * as getImages from "../requests/getImages";
 
 describe("Search", () => {
   it("Renders Correctly", () => {
@@ -13,20 +14,29 @@ describe("Search", () => {
     const inputElement = screen.getByPlaceholderText("Enter keywords...");
 
     fireEvent.change(inputElement, {target: { value: "space" }} );
+    
     expect(inputElement.value).toBe("space");
   });
 
   it("Calls setSearchResults when form is submitted", async () => {
     const setSearchResultsMock = jest.fn();
+    const mockReturn = jest.fn();
+    jest.spyOn(getImages, "default").mockResolvedValue(mockReturn);
+
     render(<Search setSearchResults={setSearchResultsMock} />);
     const inputElement = screen.getByPlaceholderText("Enter keywords...");
     const submitButton = screen.getByText("Go!");
 
-    fireEvent.change(inputElement, { target: { value: "moon" } });
+    const input = "moon"
+    fireEvent.change(inputElement, { target: { value: input } });
     fireEvent.click(submitButton);
 
     await waitFor(() => {
-      expect(setSearchResultsMock).toHaveBeenCalledWith(expect.any(Array));
+      expect(getImages.default).toBeCalledWith(input)
+    });
+
+    await waitFor(() => {
+      expect(setSearchResultsMock).toHaveBeenCalledWith(mockReturn);
     });
   });
 });

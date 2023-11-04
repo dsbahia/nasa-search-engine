@@ -2,9 +2,7 @@
 
 exports[`Search Renders Correctly 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="search-component"
-  >
+  <div>
     <form>
       <input
         class="search"

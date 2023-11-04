@@ -12,8 +12,8 @@ const Search = ({ setSearchResults }) => {
   };
 
   return (
-    <div data-testid="search-component">
-      <form onSubmit={(e) => handleSubmit(e)}>
+    <div>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           className="search"
